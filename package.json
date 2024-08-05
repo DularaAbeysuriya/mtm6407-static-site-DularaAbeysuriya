@@ -4,10 +4,10 @@
   "description": "A static site project",
   "main": "index.js",
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
-    "export": "next export",
     "start": "next start"
-  }
+  },
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
