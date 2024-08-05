@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link'; // Import Link component from next/link
+import Link from 'next/link';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 
 function AppBanner() {
@@ -54,7 +54,7 @@ function AppBanner() {
                             aria-label="About Me"
                         >
                             <span className="text-sm sm:text-lg duration-100">
-                               Learn More
+                                Learn More
                             </span>
                         </a>
                     </Link>
@@ -67,16 +67,13 @@ function AppBanner() {
                 className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
             >
                 <Image
-                    layout="responsive"
-                    src={
-                        activeTheme === 'dark'
-                            ? '/images/developer.png'
-                            : '/images/developer.png'
-                    }
+                    src="/images/developer.png"
                     alt="Developer"
-                    width={500} // specify the width
-                    height={500} // specify the height
+                    width={500}
+                    height={500}
+                    layout="responsive"
                 />
+
             </motion.div>
         </motion.section>
     );

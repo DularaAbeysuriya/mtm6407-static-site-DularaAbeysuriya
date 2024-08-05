@@ -1,6 +1,29 @@
-"scripts": {
-  "build": "next build",
-  "export": "next export",
-  "dev": "next dev",
-  "start": "next start"
+{
+  "name": "mtm6407-static-site",
+  "version": "1.0.0",
+  "description": "A static site project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.3.21",
+    "next": "latest",
+    "postcss": "^8.4.40",
+    "react": "latest",
+    "react-countup": "^6.5.3",
+    "react-dom": "latest",
+    "react-icons": "^5.2.1",
+    "tailwindcss": "^3.4.7",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.8.0"
+  }
 }

@@ -5,26 +5,33 @@ import { projectsData } from '../../data/projectsData';
 import ProjectsFilter from './ProjectsFilter';
 
 function ProjectsGrid() {
-	const [searchProject, setSearchProject] = useState();
-	const [selectProject, setSelectProject] = useState();
+	const [searchProject, setSearchProject] = useState('');
+	const [selectProject, setSelectProject] = useState('All Projects');
 
-	// @todo - To be fixed
-	// const searchProjectsByTitle = projectsData.filter((item) => {
-	// 	const result = item.title
-	// 		.toLowerCase()
-	// 		.includes(searchProject.toLowerCase())
-	// 		? item
-	// 		: searchProject == ''
-	// 		? item
-	// 		: '';
-	// 	return result;
-	// });
+	// Filter projects by title
+	const searchProjectsByTitle = projectsData.filter((item) =>
+		item.title.toLowerCase().includes(searchProject.toLowerCase())
+	);
 
-	const selectProjectsByCategory = projectsData.filter((item) => {
-		let category =
-			item.category.charAt(0).toUpperCase() + item.category.slice(1);
-		return category.includes(selectProject);
-	});
+	// Log search projects for debugging
+	console.log("Search Projects By Title:", searchProjectsByTitle);
+
+	// Filter projects by category
+	const selectProjectsByCategory = selectProject === 'All Projects'
+		? searchProjectsByTitle
+		: searchProjectsByTitle.filter((item) => {
+			// Split categories by comma and trim spaces
+			const categories = item.category.split(',').map(cat => cat.trim().toLowerCase());
+
+			// Log category for debugging
+			console.log("Project Categories:", categories);
+			console.log("Selected Category:", selectProject.toLowerCase());
+
+			return categories.includes(selectProject.toLowerCase());
+		});
+
+	// Log filtered projects for debugging
+	console.log("Filtered Projects:", selectProjectsByCategory);
 
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
@@ -73,9 +80,7 @@ function ProjectsGrid() {
 							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
 						</span>
 						<input
-							onChange={(e) => {
-								setSearchProject(e.target.value);
-							}}
+							onChange={(e) => setSearchProject(e.target.value)}
 							className="
                                 ont-general-medium 
                                 pl-3
@@ -83,7 +88,7 @@ function ProjectsGrid() {
                                 sm:px-4
                                 py-2
                                 border 
-                            border-gray-200
+                                border-gray-200
                                 dark:border-secondary-dark
                                 rounded-lg
                                 text-sm
@@ -96,9 +101,7 @@ function ProjectsGrid() {
 							id="name"
 							name="name"
 							type="search"
-							required=""
 							placeholder="Search Projects"
-							aria-label="Name"
 						/>
 					</div>
 
@@ -107,13 +110,15 @@ function ProjectsGrid() {
 			</div>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5">
-				{selectProject
-					? selectProjectsByCategory.map((project, index) => {
-							return <ProjectSingle key={index} {...project} />;
-					  })
-					: projectsData.map((project, index) => (
-							<ProjectSingle key={index} {...project} />
-					  ))}
+				{selectProjectsByCategory.length > 0 ? (
+					selectProjectsByCategory.map((project) => (
+						<ProjectSingle key={project.id} {...project} />
+					))
+				) : (
+					<p className="text-center text-primary-dark dark:text-primary-light">
+						No projects found.
+					</p>
+				)}
 			</div>
 		</section>
 	);

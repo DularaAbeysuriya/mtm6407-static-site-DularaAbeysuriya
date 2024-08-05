@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import {
 	FiFacebook,
 	FiInstagram,
@@ -9,10 +8,10 @@ import {
 
 export const projectsData = [
 	{
-		id: uuidv4(),
+		id: '1',
 		title: 'Adora Beauty Salon Branding',
 		url: 'adora-beauty-salon-branding',
-		category: 'Branding , Logo Design',
+		category: 'Branding, Logo Design',
 		img: '/images/adora-logo.jpg',
 		ProjectHeader: {
 			title: 'Adora Beauty Salon Branding',
@@ -21,17 +20,17 @@ export const projectsData = [
 		},
 		ProjectImages: [
 			{
-				id: uuidv4(),
+				id: '1-1',
 				title: 'Adora Beauty Salon Logo',
 				img: '/images/adora-logo.jpg',
 			},
 			{
-				id: uuidv4(),
+				id: '1-2',
 				title: 'Adora Beauty Salon Stationery',
 				img: '/images/adora-stationery.jpg',
 			},
 			{
-				id: uuidv4(),
+				id: '1-3',
 				title: 'Adora Beauty Salon Social Media',
 				img: '/images/adora-social.jpg',
 			},
@@ -39,10 +38,10 @@ export const projectsData = [
 		ProjectInfo: {
 			ClientHeading: 'About Client',
 			CompanyInfo: [
-				{ id: uuidv4(), title: 'Name', details: 'Adora Beauty' },
-				{ id: uuidv4(), title: 'Services', details: 'Hair and Beauty Salon' },
-				{ id: uuidv4(), title: 'Website', details: 'https://adorabeauty.com' },
-				{ id: uuidv4(), title: 'Phone', details: '555-1234-567' },
+				{ id: '1-1-1', title: 'Name', details: 'Adora Beauty' },
+				{ id: '1-1-2', title: 'Services', details: 'Hair and Beauty Salon' },
+				{ id: '1-1-3', title: 'Website', details: 'https://adorabeauty.com' },
+				{ id: '1-1-4', title: 'Phone', details: '555-1234-567' },
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
@@ -61,10 +60,10 @@ export const projectsData = [
 		},
 	},
 	{
-		id: uuidv4(),
+		id: '2',
 		title: 'Eco View Tyre Recycling Branding',
 		url: 'eco-view-tyre-recycling-branding',
-		category: 'Branding, Logo Design , Brand Identity',
+		category: 'Branding, Logo Design, Brand Identity',
 		img: '/images/eco-view-logo.jpg',
 		ProjectHeader: {
 			title: 'Eco View Tyre Recycling Branding',
@@ -73,17 +72,17 @@ export const projectsData = [
 		},
 		ProjectImages: [
 			{
-				id: uuidv4(),
+				id: '2-1',
 				title: 'Eco View Logo',
 				img: '/images/eco-view-logo.jpg',
 			},
 			{
-				id: uuidv4(),
+				id: '2-2',
 				title: 'Eco View Business Cards',
-				img: '/images/eco-view-business-cards.jpg',
+				img: '/images/eco-view-branding.jpg',
 			},
 			{
-				id: uuidv4(),
+				id: '2-3',
 				title: 'Eco View Marketing Materials',
 				img: '/images/eco-view-marketing.jpg',
 			},
@@ -91,10 +90,10 @@ export const projectsData = [
 		ProjectInfo: {
 			ClientHeading: 'About Client',
 			CompanyInfo: [
-				{ id: uuidv4(), title: 'Name', details: 'Eco View Tyre Recycling' },
-				{ id: uuidv4(), title: 'Services', details: 'Tyre Recycling' },
-				{ id: uuidv4(), title: 'Website', details: 'https://ecoviewtyrecycling.com' },
-				{ id: uuidv4(), title: 'Phone', details: '555-9876-543' },
+				{ id: '2-1-1', title: 'Name', details: 'Eco View Tyre Recycling' },
+				{ id: '2-1-2', title: 'Services', details: 'Tyre Recycling' },
+				{ id: '2-1-3', title: 'Website', details: 'https://ecoviewtyrecycling.com' },
+				{ id: '2-1-4', title: 'Phone', details: '555-9876-543' },
 			],
 			ObjectivesHeading: 'Objective',
 			ObjectivesDetails:

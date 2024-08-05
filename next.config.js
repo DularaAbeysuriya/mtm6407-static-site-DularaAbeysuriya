@@ -1,9 +1,6 @@
 module.exports = {
-    target: 'serverless',
-    images: {
-      loader: 'imgix',
-      path: '',
-    },
-    exportTrailingSlash: true,
-  };
-  
+  images: {
+    domains: [], // Add domains if you are using external images
+    minimumCacheTTL: 60, // Optional: Set cache TTL for images
+  },
+};
