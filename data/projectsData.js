@@ -111,4 +111,108 @@ export const projectsData = [
 			],
 		},
 	},
+	{
+		id: '3',
+		title: 'Kingswood Rugby Team Branding',
+		url: 'kingswood-rugby-team-branding',
+		category: 'Branding, Logo Design, Sports Branding',
+		img: '/images/kingswood-rugby-logo.jpg',
+		ProjectHeader: {
+			title: 'Kingswood Rugby Team Branding',
+			publishDate: 'Aug 5, 2024',
+			tags: 'Branding / Logo Design / Sports Branding',
+		},
+		ProjectImages: [
+			{
+				id: '3-1',
+				title: 'Kingswood Rugby Logo',
+				img: '/images/kingswood-rugby-logo.jpg',
+			},
+			{
+				id: '3-2',
+				title: 'Kingswood Rugby Team Jerseys',
+				img: '/images/kingswood-rugby-jersey.jpg',
+			},
+			{
+				id: '3-3',
+				title: 'Kingswood Rugby Team Social Media',
+				img: '/images/kingswood-rugby-social.jpg',
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Client',
+			CompanyInfo: [
+				{ id: '3-1-1', title: 'Name', details: 'Kingswood Rugby Team' },
+				{ id: '3-1-2', title: 'Services', details: 'Rugby Team' },
+				{ id: '3-1-3', title: 'Website', details: 'https://kingswoodrugby.com' },
+				{ id: '3-1-4', title: 'Phone', details: '555-2345-678' },
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'To design a bold and dynamic brand identity that captures the spirit and strength of the Kingswood Rugby Team.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'Adobe Illustrator',
+						'Adobe Photoshop',
+						'Sketch',
+						'Figma',
+					],
+				},
+			],
+		},
+	},
+	{
+		id: '4',
+		title: 'Ozone Consultants Branding',
+		url: 'ozone-consultants-branding',
+		category: 'Branding, Logo Design,Social Media Design',
+		img: '/images/ozone-consultants-logo.jpg',
+		ProjectHeader: {
+			title: 'Ozone Consultants Branding',
+			publishDate: 'Aug 5, 2024',
+			tags: 'Branding / Logo Design / Consultancy',
+		},
+		ProjectImages: [
+			{
+				id: '4-1',
+				title: 'Ozone Consultants Logo',
+				img: '/images/ozone-consultants-logo.jpg',
+			},
+			{
+				id: '4-2',
+				title: 'Ozone Consultants Booth',
+				img: '/images/ozone-consultants-booth.jpg',
+			},
+			{
+				id: '4-3',
+				title: 'Ozone Consultants Marketing Materials',
+				img: '/images/ozone-consultants-marketing.jpg',
+			},
+		],
+		ProjectInfo: {
+			ClientHeading: 'About Client',
+			CompanyInfo: [
+				{ id: '4-1-1', title: 'Name', details: 'Ozone Consultants' },
+				{ id: '4-1-2', title: 'Services', details: 'Study Abroad Consultancy' },
+				{ id: '4-1-3', title: 'Website', details: 'https://ozoneconsultants.com' },
+				{ id: '4-1-4', title: 'Phone', details: '555-3456-789' },
+			],
+			ObjectivesHeading: 'Objective',
+			ObjectivesDetails:
+				'To create a professional and trustworthy brand identity that appeals to students and parents seeking study abroad services.',
+			Technologies: [
+				{
+					title: 'Tools & Technologies',
+					techs: [
+						'Adobe Illustrator',
+						'Adobe Photoshop',
+						'Sketch',
+						'Figma',
+					],
+				},
+			],
+		},
+	},
 ];
