@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    margin: 20px;
+  }
+  
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0070f3;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .gallery-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-layout > * {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+  }
+  
